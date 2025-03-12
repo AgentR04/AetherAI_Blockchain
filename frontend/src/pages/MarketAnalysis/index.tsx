@@ -1,8 +1,6 @@
 import React from 'react';
-import { Grid, Paper, Typography, Box } from '@mui/material';
+import { Box, Grid, Paper, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import MarketTable from '../Dashboard/components/MarketTable';
-import CryptoStats from '../Dashboard/components/CryptoStats';
 
 const StyledPaper = styled(Paper)(({ theme }) => ({
   background: 'linear-gradient(145deg, rgba(26,26,26,0.9), rgba(10,10,10,0.9))',
@@ -26,7 +24,7 @@ const GradientTypography = styled(Typography)(({ theme }) => ({
   marginBottom: theme.spacing(3),
 }));
 
-const MarketUpdate = () => {
+const MarketAnalysis = () => {
   return (
     <Box sx={{ p: 3 }}>
       <GradientTypography variant="h4" gutterBottom>
@@ -35,34 +33,10 @@ const MarketUpdate = () => {
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <StyledPaper>
-            <Typography 
-              variant="h5" 
-              gutterBottom 
-              sx={{ 
-                color: 'primary.main',
-                fontWeight: 500,
-                mb: 3
-              }}
-            >
+            <Typography variant="h6" gutterBottom>
               Market Overview
             </Typography>
-            <CryptoStats />
-          </StyledPaper>
-        </Grid>
-        <Grid item xs={12}>
-          <StyledPaper>
-            <Typography 
-              variant="h5" 
-              gutterBottom 
-              sx={{ 
-                color: 'primary.main',
-                fontWeight: 500,
-                mb: 3
-              }}
-            >
-              Market Update
-            </Typography>
-            <MarketTable />
+            {/* Add market analysis content here */}
           </StyledPaper>
         </Grid>
       </Grid>
@@ -70,4 +44,4 @@ const MarketUpdate = () => {
   );
 };
 
-export default MarketUpdate;
+export default MarketAnalysis;

@@ -1,9 +1,9 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Layout from '../components/Layout';
-import Dashboard from '../pages/Dashboard';
-import MarketUpdate from '../pages/MarketUpdate';
-import Investments from '../pages/Investments';
-import AetherAI from '../pages/AetherAI';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Layout from "../components/Layout";
+import AetherAI from "../pages/AetherAI";
+import Dashboard from "../pages/Dashboard";
+import Investments from "../pages/Investments";
+import MarketUpdate from "../pages/MarketUpdate";
 
 const AppRoutes = () => {
   return (
